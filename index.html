@@ -12,7 +12,7 @@
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<p>JColey</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -51,7 +51,26 @@
 							<!-- HINT: Add to what you created in Step 5 -->
 							<p class="tweet-text">Today is an amazing day.</p>
 
-							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
+							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidde    if (current < 140) {
+        $(#tweet-submit).on('click', function() {
+            ////stuff here.....
+
+            var tweetStartDiv = "<div class='tweet'>";
+
+            var contentWithoutCloseDiv = "<div class='content'><img class='avatar' src='' /><strong class='fullname'></strong><span class='username'></span><p class='tweet-text'></p>";
+
+            var tweetActionsDiv = "<div class='tweet-actions'><ul><li><span class='icon action-reply'></span> Reply</li><li><span class='icon action-retweet'></span> Retweet</li><li><span class='icon action-favorite'></span> Favorite</li><li><span class='icon action-more'></span> More</li></ul></div>";
+
+            var statsDiv = "<div class='stats'><div class='retweets'><p class='num-retweets'>30</p><p>RETWEETS</p></div><div class='favorites'><p class='num-favorites'>6</p><p>FAVORITES</p></div><div class='users-interact'><div><img src='img/jennyshen.jpg' /><img src='img/damenleeturks.jpg' /></div></div><div class='time'>TIME</div></div>";
+
+            var replyDiv = "<div class='reply'><img class='avatar' src='img/alagoon.jpg' /><textarea class='tweet-compose' placeholder='Reply to @mybff'/></textarea></div>";
+
+            var contentCloseDiv = "</div>";
+
+            var tweetCloseDiv = "</div>";
+
+
+            $(#stream).prepend(tweetStartDiv, contentWithoutCloseDiv, tweetActionDiv, statsDiv, replyDiv, contentCloseDiv, tweetCloseDiv);n. -->
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
 								<ul>
